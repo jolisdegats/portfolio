@@ -1,0 +1,85 @@
+// Project list
+.projects {
+  width: 60%;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  h1,
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .projectsBlock {
+    margin: 50px 0 100px;
+
+    .projectsList {
+      margin-top: 100px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projects-list-item {
+      flex: 0 0 calc(33% - 20px);
+      cursor: pointer;
+      margin-bottom: 20px;
+      &:nth-child(2n + 2) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    p {
+      margin-top: 70px;
+      text-align: center;
+      span {
+        cursor: pointer;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .todoList {
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 30vw;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border-radius: 5px;
+      color: #4d3e37;
+      .taskTitle:before {
+        margin-right: 20px;
+        font-size: 20px;
+      }
+    }
+    .taskDone {
+      background-color: #a29285;
+      .taskTitle:before {
+        content: "☑";
+      }
+      &:after {
+        width: calc(30% - 35px);
+        margin-left: 40px;
+        margin-top: 3px;
+        height: 2px;
+        background: #4d3e37;
+        content: "";
+        position: absolute;
+      }
+    }
+    .taskTodo {
+      background-color: #efe6dd;
+      .taskTitle:before {
+        content: "☐";
+      }
+    }
+  }
+}

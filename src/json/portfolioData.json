@@ -1,0 +1,172 @@
+[
+  {
+    "idName": "echoes",
+    "title": "MVP Echoes",
+    "category": "Fullstack",
+    "soloOrTeam": "En équipe",
+    "duration": 500,
+    "description": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure.//Projet réalisé en deux semaines par une équipe de 4 personnes dont j'étais la lead developer.",
+    "languages": ["NodeJS", "React", "express"],
+    "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780933/portfolio/echoes/Echoes_i9glpu.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780933/portfolio/echoes/Echoes_i9glpu.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+    ],
+    "github": [
+      {
+        "text": "Frontend",
+        "link": "https://github.com/jolisdegats/echoes-frontend"
+      },
+      {
+        "text": "Backend",
+        "link": "https://github.com/jolisdegats/echoes-api"
+      }
+    ],
+
+    "demo": [
+      {
+        "text": "VOIR LA DEMO",
+        "demoLink": "https://echoes-jolisdegats.netlify.app/",
+        "login": { "admin": "admin", "mdp": "mdp" }
+      },
+      {
+        "text": "VOIR LE BACKOFFICE",
+        "demoLink": "https://echoes-jolisdegats.netlify.app/",
+        "login": { "admin": "administrareut", "mdp": "mot de passe" }
+      }
+    ],
+    "gif": "echoes-gif"
+  },
+  {
+    "idName": "marvel",
+    "title": "Marvel",
+    "category": "Fullstack",
+    "soloOrTeam": "Solo",
+    "duration": 8,
+    "description": "This is the description of the project.",
+    "languages": ["NodeJS", "React", "express"],
+    "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780896/portfolio/marvel/Marvel_q6a4wj.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780896/portfolio/marvel/Marvel_q6a4wj.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+    ],
+    "github": [
+      {
+        "text": "Frontend",
+        "link": "https://github.com/jolisdegats/marvel-frontend"
+      },
+      {
+        "text": "Backend",
+        "link": "https://github.com/jolisdegats/marvel-backend"
+      }
+    ],
+    "demo": [
+      {
+        "text": "VOIR LA DEMO",
+        "demoLink": "https://marvel-jolisdegats.netlify.app/"
+      }
+    ],
+    "gif": "marvel-gif",
+    "screenshot": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600782482/portfolio/marvel/marvel-screenshot_gr9n8c.jpg"
+  },
+  {
+    "idName": "leboncoin",
+    "title": "Leboncoin",
+    "category": "Fullstack",
+    "soloOrTeam": "Solo",
+    "duration": 8,
+    "description": "This is the description of the project.",
+    "languages": ["NodeJS", "React", "express"],
+    "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780923/portfolio/leboncoin/Leboncoin_mhk3ci.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780923/portfolio/leboncoin/Leboncoin_mhk3ci.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+    ],
+    "github": [
+      {
+        "text": "Frontend",
+        "link": "https://github.com/jolisdegats/leboncoin-frontend"
+      },
+      {
+        "text": "Backend",
+        "link": "https://github.com/jolisdegats/leboncoin-api"
+      }
+    ],
+
+    "demo": [
+      {
+        "text": "VOIR LA DEMO",
+        "demoLink": "https://leboncoin-jolisdegats.netlify.app/",
+        "login": {
+          "admin": "",
+          "mdp": ""
+        }
+      }
+    ],
+
+    "gif": "leboncoin-gif"
+  },
+  {
+    "idName": "deliveroo",
+    "title": "Panier Deliveroo",
+    "category": "Fullstack",
+    "soloOrTeam": "Solo",
+    "duration": 8,
+    "description": "This is the description of the project.",
+    "languages": ["NodeJS", "React", "express"],
+    "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780941/portfolio/deliveroo/Deliveroo_irdfce.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780941/portfolio/deliveroo/Deliveroo_irdfce.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+    ],
+    "github": [
+      {
+        "text": "Frontend",
+        "link": "https://github.com/jolisdegats/deliveroo-front-end"
+      },
+      {
+        "text": "Backend",
+        "link": "https://github.com/jolisdegats/deliveroo-back-end"
+      }
+    ],
+    "demo": [
+      {
+        "text": "VOIR LA DEMO",
+        "demoLink": "https://deliveroo-jolisdegats.netlify.app/"
+      }
+    ],
+    "gif": "deliveroo-gif"
+  },
+  {
+    "idName": "react-todolist",
+    "title": "Todo List",
+    "category": "Frontend",
+    "soloOrTeam": "Solo",
+    "duration": 8,
+    "description": "This is the description of the project.",
+    "languages": ["NodeJS", "React", "express"],
+    "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601245282/portfolio/react-todolist/React-todolist_zzidmd.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601245282/portfolio/react-todolist/React-todolist_zzidmd.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
+      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+    ],
+    "github": [
+      {
+        "text": "Frontend",
+        "link": "https://github.com/jolisdegats/react-todolist"
+      }
+    ],
+    "demo": [
+      {
+        "text": "VOIR LA DEMO",
+        "demoLink": "https://todolist-jolisdegats.netlify.app/"
+      }
+    ],
+    "gif": ""
+  }
+]

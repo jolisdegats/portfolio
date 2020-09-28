@@ -1,0 +1,151 @@
+// UNIQUE PROJECT (project item
+
+.unique-project-content {
+  width: 50%;
+  flex-direction: column;
+  margin-top: 50px;
+  .headerContentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    h1 {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+      margin-top: 10px;
+    }
+    .backToProjects {
+      background: none;
+      cursor: pointer;
+      color: #cfcfcf;
+      &:hover {
+        color: black;
+      }
+    }
+
+    .backgroundImageGallery {
+      width: 100%;
+      height: 60vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      div:nth-child(2) {
+        flex: 1;
+      }
+      button {
+        display: none;
+      }
+
+      &:hover {
+        button {
+          display: flex;
+          width: auto;
+          padding: 10px 5px;
+          background-color: rgba(255, 255, 255, 0.5);
+          color: white;
+          font-size: 30px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .demoLinkBlock {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 40%;
+      .demoLink {
+        // font-family: "Muli", sans-serif;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        height: 40px;
+        margin: 5px 0;
+        background: #efe6dd;
+        color: #5e534a;
+        border: solid 3px #5e534a;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 12px;
+        width: 80%;
+      }
+      p {
+        text-align: center;
+        font-style: italic;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .projectContentBlock {
+    width: 100%;
+    flex: 1;
+    .projectInfosTitle {
+      letter-spacing: 2px;
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    .projectInfos {
+      display: flex;
+      align-items: center;
+      padding: 0px 50px 20px;
+      margin: 30px 0 50px 0;
+      border-bottom: solid 1px black;
+      border-top: solid 1px black;
+      div {
+        flex: 1;
+      }
+    }
+    h2 {
+      margin-top: 50px;
+    }
+
+    .buttonsBlock {
+      display: flex;
+      button {
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        height: 30px;
+        margin: 5px 10px 5px 0;
+        width: 25%;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .gitLink {
+        span:before {
+          content: "";
+          background-size: 100% 100%;
+          display: inline-block;
+          margin-right: 5px;
+          background-image: url(../img/icons/GitHub-Mark-Light-32px.png);
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,781 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://use.typekit.net/mym6tgu.css");
+.about {
+  width: 60%;
+  line-height: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about > div {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+.about .status {
+  font-weight: 700;
+  text-align: center;
+  line-height: 16px;
+  margin: 30px 0;
+}
+
+.about .status span {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.about .description {
+  margin-top: 150px;
+}
+
+.about .description div {
+  margin-top: 50px;
+}
+
+.about .description .linkToProfile {
+  font-style: italic;
+}
+
+.about .description .linkToProfile:before {
+  font-style: normal;
+  content: "▶";
+  margin-right: 10px;
+}
+
+.about .description .linkToProfile span {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.about .skills > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .skills > div div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.about .skills > div div p {
+  margin-top: 0px;
+}
+
+.about .skills > div div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about .skills > div div div img {
+  max-width: 50%;
+  max-height: 60px;
+}
+
+.about .hobbies .masonry {
+  margin: 30px auto;
+}
+
+.about .hobbies .itemHobbies {
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+}
+
+.about .hobbies .itemHobbies:hover:before {
+  content: attr(data-before);
+  background: #f9f8f5fa;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+/* BURGER MENU */
+.burger {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-duration: 0s;
+  animation-delay: 0s;
+}
+
+.burger nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger nav div {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.shown {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.hidden {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+}
+
+/* HOMEPAGE CONTENT */
+.homepageContent {
+  width: 60%;
+}
+
+.homepageContent div {
+  margin-left: 30px;
+}
+
+.homepageContent h2 {
+  line-height: 36px;
+  color: #319bdb;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.homepageContent p {
+  line-height: 30px;
+}
+
+.homepageContent .status {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.projects {
+  width: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects h1,
+.projects h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects .projectsBlock {
+  margin: 50px 0 100px;
+}
+
+.projects .projectsBlock .projectsList {
+  margin-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .projectsBlock .projects-list-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(33% - 20px);
+          flex: 0 0 calc(33% - 20px);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.projects .projectsBlock .projects-list-item:nth-child(2n + 2) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.projects .projectsBlock .projects-list-item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.projects .projectsBlock p {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.projects .projectsBlock p span {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.projects .todoList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30vw;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #4d3e37;
+}
+
+.projects .todoList li .taskTitle:before {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.projects .todoList .taskDone {
+  background-color: #a29285;
+}
+
+.projects .todoList .taskDone .taskTitle:before {
+  content: "☑";
+}
+
+.projects .todoList .taskDone:after {
+  width: calc(30% - 35px);
+  margin-left: 40px;
+  margin-top: 3px;
+  height: 2px;
+  background: #4d3e37;
+  content: "";
+  position: absolute;
+}
+
+.projects .todoList .taskTodo {
+  background-color: #efe6dd;
+}
+
+.projects .todoList .taskTodo .taskTitle:before {
+  content: "☐";
+}
+
+.unique-project-content {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.unique-project-content .headerContentBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.unique-project-content .headerContentBlock h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.unique-project-content .headerContentBlock .backToProjects {
+  background: none;
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+.unique-project-content .headerContentBlock .backToProjects:hover {
+  color: black;
+}
+
+.unique-project-content .headerContentBlock .backgroundImageGallery {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.unique-project-content .headerContentBlock .backgroundImageGallery div:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.unique-project-content .headerContentBlock .backgroundImageGallery button {
+  display: none;
+}
+
+.unique-project-content .headerContentBlock .backgroundImageGallery:hover button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding: 10px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.unique-project-content .headerContentBlock .backgroundImageGallery:hover button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.unique-project-content .demoLinkBlock {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.unique-project-content .demoLinkBlock > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.unique-project-content .demoLinkBlock > div .demoLink {
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  margin: 5px 0;
+  background: #efe6dd;
+  color: #5e534a;
+  border: solid 3px #5e534a;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  width: 80%;
+}
+
+.unique-project-content .demoLinkBlock > div p {
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.unique-project-content .projectContentBlock {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.unique-project-content .projectContentBlock .projectInfosTitle {
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.unique-project-content .projectContentBlock .projectInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 50px 20px;
+  margin: 30px 0 50px 0;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+}
+
+.unique-project-content .projectContentBlock .projectInfos div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.unique-project-content .projectContentBlock h2 {
+  margin-top: 50px;
+}
+
+.unique-project-content .projectContentBlock .buttonsBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.unique-project-content .projectContentBlock .buttonsBlock button {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  margin: 5px 10px 5px 0;
+  width: 25%;
+}
+
+.unique-project-content .projectContentBlock .buttonsBlock button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.unique-project-content .projectContentBlock .buttonsBlock .gitLink span:before {
+  content: "";
+  background-size: 100% 100%;
+  display: inline-block;
+  margin-right: 5px;
+  background-image: url(../img/icons/GitHub-Mark-Light-32px.png);
+  height: 20px;
+  width: 20px;
+}
+
+/* HOMEPAGE CONTENT */
+.contactContent {
+  width: 60%;
+}
+
+.contactContent > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 30px;
+}
+
+.contactContent p {
+  line-height: 30px;
+}
+
+.contactContent > img {
+  width: 20vw;
+}
+
+.contactContent .contactSites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactContent .contactSites img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: #f9f8f5;
+}
+
+main {
+  margin: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+}
+
+header img {
+  height: 80%;
+  cursor: pointer;
+}
+
+footer {
+  height: 8vh;
+}
+
+h1 {
+  font-family: "Trochut", serif;
+  font-weight: bold;
+  font-size: 70px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  color: #222725;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+p {
+  font-family: "Muli", sans-serif;
+  color: #333;
+}
+
+button {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.nav-icon4 {
+  width: calc(20px + 20px / 3);
+  height: 20px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: calc(20px / 4);
+  width: 100%;
+  background: #d3c9c0;
+  border-radius: 9px;
+  opacity: 1;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.nav-icon4 span:nth-child(2) {
+  top: calc((20px - calc(20px / 4)) / 2 + 1px);
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.nav-icon4 span:nth-child(3) {
+  top: calc(20px - calc(20px / 4) + 2px);
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.nav-icon4:hover span:nth-child(1),
+.nav-icon4:hover span:nth-child(3) {
+  width: 75%;
+}
+
+.nav-icon4:hover span:nth-child(2) {
+  width: 50%;
+}
+
+.nav-icon4.open span:nth-child(1) {
+  width: 100%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-icon4.open span:nth-child(3) {
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Javascript",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png"
+  },
+  {
+    "title": "HTML5",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+  },
+  {
+    "title": "CSS3",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+  },
+  {
+    "title": "SASS",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+  },
+  {
+    "title": "React / React Native",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+  },
+  {
+    "title": "NodeJs",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
+  },
+  {
+    "title": "MongoDB",
+    "img": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/45/MongoDB-Logo.svg/1280px-MongoDB-Logo.svg.png"
+  },
+  {
+    "title": "Github",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+  },
+  {
+    "title": "Heroku",
+    "img": "https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
+  },
+  {
+    "title": "Netlify",
+    "img": "https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png"
+  },
+  {
+    "title": "Figma",
+    "img": "https://cdn.worldvectorlogo.com/logos/figma-1.svg"
+  },
+  {
+    "title": "Visual Studio Code",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+  },
+  {
+    "title": "Photoshop",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2000px-Adobe_Photoshop_CC_icon.svg.png"
+  },
+  {
+    "title": "Illustrator",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
+  },
+  {
+    "title": "Indesign",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png"
+  }
+]
