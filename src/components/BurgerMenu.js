@@ -1,8 +1,7 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Burger = ({ burgerMenu }) => {
-  const history = useHistory();
   return (
     <div className={burgerMenu ? "burger shown" : "burger hidden"}>
       <nav>
