@@ -6,7 +6,7 @@ const About = () => {
   const hobbies = [
     {
       link:
-        "https://mediatheques.villeurbanne.fr/wp-content/upload/2017/01/thumbs-up.gif",
+        "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329095/portfolio/About-hobbies-pictures/thumbs-up_hbgei8.gif",
       title: "Mon gif favori, ever !",
     },
     {
@@ -16,8 +16,9 @@ const About = () => {
     },
     {
       link:
-        "https://media1.tenor.com/images/031ad7a8c9f59f91d408700f55d16175/tenor.gif?itemid=15044388",
-      title: "Quand je tente de convaincre mes copains de regarder un Anime",
+        "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329107/portfolio/About-hobbies-pictures/vinland_wsnbwh.gif",
+      title:
+        "Quand je tente désespérement de convaincre mes copains de regarder un Anime",
     },
     {
       link:
@@ -26,8 +27,8 @@ const About = () => {
     },
     {
       link:
-        "https://media3.giphy.com/media/9G3wg7lH5DpxC/giphy-downsized-large.gif",
-      title: "Quand je dis que je suis geek... et qu'on ne me croit pas !",
+        "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329107/portfolio/About-hobbies-pictures/justin-face_ttk9tb.gif",
+      title: "Quand je dis que je suis une geek... et qu'on ne me croit pas !",
     },
     {
       link:
@@ -35,8 +36,10 @@ const About = () => {
       title: "Lanzarote",
     },
     {
-      link: "https://zeldaenfrancais.files.wordpress.com/2018/04/ieqwxbv.gif",
-      title: "Quand j'essaie de cuisiner des légumes",
+      link:
+        "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329106/portfolio/About-hobbies-pictures/cooking-link_jmjh33.gif",
+      title:
+        "Quand j'essaie de cuisiner des légumes, mais que je n'ai aucune idée de ce que je fais",
     },
 
     {
@@ -46,7 +49,8 @@ const About = () => {
     },
 
     {
-      link: "http://ekladata.com/oOQ1GjB-fMPFVJjRrezye-uijaE@400x219.gif",
+      link:
+        "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329094/portfolio/About-hobbies-pictures/geek-eating_kvefxn.gif",
       title: "Moi, tentant d'optimiser mon temps de vie",
     },
   ];
