@@ -168,9 +168,11 @@
           align-items: center;
 }
 
-.burger nav div {
+.burger nav a {
   margin-right: 30px;
   cursor: pointer;
+  text-decoration: none;
+  color: #222725;
 }
 
 .shown {

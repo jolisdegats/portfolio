@@ -1,15 +1,15 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const Burger = ({ burgerMenu }) => {
   const history = useHistory();
   return (
     <div className={burgerMenu ? "burger shown" : "burger hidden"}>
       <nav>
-        <div onClick={() => history.push("/")}>Hi !</div>
-        <div onClick={() => history.push("/a-propos")}>A propos</div>
-        <div onClick={() => history.push("/projects")}>Projets</div>
-        <div onClick={() => history.push("/contact")}>Contact</div>
+        <Link to="/">Hi !</Link>
+        <Link to="/a-propos">A propos</Link>
+        <Link to="/projects">Projets</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </div>
   );
