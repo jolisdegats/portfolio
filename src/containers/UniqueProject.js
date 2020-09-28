@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import Lightbox from "react-image-lightbox";
-// import "react-image-lightbox/style.css";
+import "react-image-lightbox/style.css";
 
 const UniqueProject = () => {
   const location = useLocation();
