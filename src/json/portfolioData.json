@@ -8,7 +8,7 @@
     "description": [
       {
         "type": "paragraph",
-        "content": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure"
+        "content": "Création du MVP d'Echoes, une startup spécialisée dans la création de podcasts sur mesure"
       },
       {
         "type": "paragraph",
@@ -69,11 +69,11 @@
       },
       {
         "type": "paragraph",
-        "content": "Exemple : lorsque le statut est 'En production', le client ne peut plus modifier sa demande. Seul Echoes peut accèder aux informations et envoyer le fichier final une fois la production terminée."
+        "content": "Exemple : lorsque le statut est 'En production', le client ne peut plus modifier sa demande. Seul Echoes peut accèder aux informations depuis le backoffice et envoyer le fichier final une fois la production terminée."
       },
       {
         "type": "paragraph",
-        "content": "Lorsque le fichier est envoyé, le statut passe à 'En attente validation' et une notification email est envoyée au client (non-activé dans la démo). Le client peut alors écouter son audio et demander des modifications si nécessaire. Le statut repasse alors à 'En production'."
+        "content": "Lorsque le fichier est envoyé, le statut passe à 'En attente validation' et une notification email est envoyée au client (non-activé pour la démo). Le client peut alors se connecter, écouter son audio et demander des modifications si nécessaire. Le statut repasse alors à 'En production'."
       }
     ],
     "furtherDev": [
@@ -115,7 +115,10 @@
       {
         "text": "VOIR LE BACKOFFICE",
         "demoLink": "https://echoes-jolisdegats.netlify.app/",
-        "login": { "admin": "administrareut", "mdp": "mot de passe" }
+        "login": {
+          "admin": "developper.jolisdegats@gmail.com",
+          "mdp": "demoJS29$"
+        }
       }
     ],
     "gif": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601300271/portfolio/echoes/echoes-gif_n5tibh.gif"
