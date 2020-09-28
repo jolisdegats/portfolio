@@ -106,7 +106,7 @@ const About = () => {
       </div>
 
       <div className="hobbies">
-        <h2>Hobbies</h2>
+        <h2>Tranche de vie</h2>
         <div className="masonry">
           <HobbiesMasonry columns={3} gap={25} hobbies={hobbies}>
             {hobbies.map((elem, key) => {
