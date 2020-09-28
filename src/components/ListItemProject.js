@@ -17,8 +17,9 @@ const ListItemProject = ({ elem, index }) => {
         src={
           imageHover === true
             ? elem.gif !== ""
-              ? `./assets/projets/${elem.gif}.gif`
-              : elem.gallery[0]
+              ? elem.gallery[elem.gallery.length]
+              : // ? `./assets/projets/${elem.gif}.gif`
+                elem.gallery[0]
             : elem.gallery[0]
         }
         alt=""
