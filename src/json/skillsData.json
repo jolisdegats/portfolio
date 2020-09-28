@@ -1,62 +1,62 @@
 [
   {
     "title": "Javascript",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1200px-Javascript-shield.svg_d8a17g.png"
   },
   {
     "title": "HTML5",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329916/portfolio/About-hobbies-pictures/1024px-HTML5_logo_and_wordmark.svg_mwrotr.png"
   },
   {
     "title": "CSS3",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/CSS3_logo_and_wordmark.svg_r550oi.png"
   },
   {
     "title": "SASS",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329916/portfolio/About-hobbies-pictures/1024px-Sass_Logo_Color.svg_d0in8h.png"
   },
   {
     "title": "React / React Native",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1280px-React-icon.svg_s3oomx.png"
   },
   {
     "title": "NodeJs",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1280px-Node.js_logo.svg_lccnlg.png"
   },
   {
     "title": "MongoDB",
-    "img": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/45/MongoDB-Logo.svg/1280px-MongoDB-Logo.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1280px-MongoDB-Logo.svg_o356f3.png"
   },
   {
     "title": "Github",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1200px-Octicons-mark-github.svg_u6wacp.png"
   },
   {
     "title": "Heroku",
-    "img": "https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/heroku_ccgbuk.png"
   },
   {
     "title": "Netlify",
-    "img": "https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/netlify_fc1wze.svg"
   },
   {
     "title": "Figma",
-    "img": "https://cdn.worldvectorlogo.com/logos/figma-1.svg"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/figma-1_mwuok2.svg"
   },
   {
     "title": "Visual Studio Code",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1200px-Visual_Studio_Code_1.35_icon.svg_mvbfsz.png"
   },
   {
     "title": "Photoshop",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2000px-Adobe_Photoshop_CC_icon.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/2000px-Adobe_Photoshop_CC_icon.svg_vzuvd3.png"
   },
   {
     "title": "Illustrator",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329915/portfolio/About-hobbies-pictures/1200px-Adobe_Illustrator_CC_icon.svg_bdjivl.png"
   },
   {
     "title": "Indesign",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png"
+    "img": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601329916/portfolio/About-hobbies-pictures/1200px-Adobe_InDesign_CC_icon.svg_sz6roi.png"
   }
 ]
