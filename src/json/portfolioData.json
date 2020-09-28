@@ -200,7 +200,7 @@
         "text": "VOIR LA DEMO",
         "demoLink": "https://leboncoin-jolisdegats.netlify.app/",
         "login": {
-          "admin": "demon@mail.com",
+          "admin": "demo@mail.com",
           "mdp": "demo"
         }
       }
