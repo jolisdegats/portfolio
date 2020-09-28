@@ -32,7 +32,6 @@ const About = () => {
     {
       link:
         "https://res.cloudinary.com/dqp905mfv/image/upload/v1601277902/portfolio/About-hobbies-pictures/120284155_2722970374650806_1379749601176669398_n_zabe8k.jpg",
-      // "https://res.cloudinary.com/dqp905mfv/image/upload/v1601277902/portfolio/About-hobbies-pictures/120344995_417976972530351_1109769379929694802_n_suhvu7.jpg",
       title: "Lanzarote",
     },
     {

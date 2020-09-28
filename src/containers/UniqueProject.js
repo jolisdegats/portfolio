@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+// import "react-image-lightbox/style.css";
 
 const UniqueProject = () => {
   const location = useLocation();
@@ -10,7 +10,41 @@ const UniqueProject = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const item = location.state.item;
-  let desc = item.description.split("//");
+
+  useEffect(() => {
+    item.gif !== "" && item.gallery.push(item.gif);
+  }, [item.gallery, item.gif]);
+
+  const parsing = (arr) => {
+    let str = [];
+    let title = "";
+    let bal;
+    if (arr === item.features) {
+      title = "Features :";
+    } else if (arr === item.furtherDev) {
+      title = "Futurs développements :";
+    }
+
+    str.push(<h2 key={0}>{title}</h2>);
+    arr.map((elem, index) => {
+      if (elem.type === "paragraph") {
+        bal = <p key={index + 1}>{elem.content}</p>;
+      } else if (elem.type === "list") {
+        bal = (
+          <ul key={index + 1}>
+            {elem.content.map((listItem, index) => {
+              return <li key={index}>{listItem.content}</li>;
+            })}
+          </ul>
+        );
+      } else {
+        bal = <br key={index + 1} />;
+      }
+      return str.push(bal);
+    });
+
+    return str;
+  };
 
   return (
     <main className="unique-project-content">
@@ -90,57 +124,58 @@ const UniqueProject = () => {
           </div>
           <div>
             <h2>DUREE</h2>
-            <p>Environ {item.duration} heures</p>
+            <p>{item.duration}</p>
           </div>
         </div>
 
         <div className="projectDescription">
-          {desc.map((paragraph, index) => {
-            return <p key={index}>{paragraph}</p>;
-          })}
-        </div>
+          {item.description && parsing(item.description)}
 
-        <div className="demoLinkBlock">
-          {item.demo.map((elem, index) => {
-            return (
-              <div key={index}>
+          <div className="demoLinkBlock">
+            {item.demo.map((elem, index) => {
+              return (
+                <div key={index}>
+                  <button
+                    className="demoLink"
+                    onClick={() => window.open(elem.demoLink, "_blank")}
+                  >
+                    <span>{elem.text}</span>
+                  </button>
+                  {elem.login && (
+                    <p>
+                      admin : {elem.login.admin} <br /> mdp : {elem.login.mdp}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {item.features && parsing(item.features)}
+
+          {item.furtherDev && parsing(item.furtherDev)}
+
+          <h2>Stack :</h2>
+          <p>
+            {item.stack.map((elem, index) => {
+              return <span key={index}>{elem}, </span>;
+            })}
+          </p>
+
+          <h2>Code du projet :</h2>
+          <div className="buttonsBlock">
+            {item.github.map((elem, index) => {
+              return (
                 <button
-                  className="demoLink"
-                  onClick={() => window.open(elem.demoLink, "_blank")}
+                  key={index}
+                  className="gitLink"
+                  onClick={() => window.open(elem.link, "_blank")}
                 >
                   <span>{elem.text}</span>
                 </button>
-                {elem.login && (
-                  <p>
-                    admin : {elem.login.admin} <br /> mdp : {elem.login.mdp}
-                  </p>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        <h2> Languages et packages :</h2>
-
-        <p>
-          {item.languages.map((elem, index) => {
-            return <span key={index}>{elem}, </span>;
-          })}
-        </p>
-
-        <h2>Code du projet :</h2>
-        <div className="buttonsBlock">
-          {item.github.map((elem, index) => {
-            return (
-              <button
-                key={index}
-                className="gitLink"
-                onClick={() => window.open(elem.link, "_blank")}
-              >
-                <span>{elem.text}</span>
-              </button>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </main>

@@ -4,14 +4,96 @@
     "title": "MVP Echoes",
     "category": "Fullstack",
     "soloOrTeam": "En équipe",
-    "duration": 500,
-    "description": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure.//Projet réalisé en deux semaines par une équipe de 4 personnes dont j'étais la lead developer.",
-    "languages": ["NodeJS", "React", "express"],
+    "duration": "2 semaines",
+    "description": [
+      {
+        "type": "paragraph",
+        "content": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure"
+      },
+      {
+        "type": "paragraph",
+        "content": "Projet réalisé en deux semaines par une équipe de 4 personnes dont j'étais la lead developer."
+      }
+    ],
+    "features": [
+      {
+        "type": "paragraph",
+        "content": "L'objectif était de créer une plateforme client permettant de :"
+      },
+      {
+        "type": "list",
+        "content": [
+          { "content": "Créer, modifier et supprimer son compte" },
+          {
+            "content": " Créer une demande d'épisode avec options (identité de marque, voix, longueur du texte, options)"
+          },
+          { "content": "Enregistrer l'épisode en brouillon" },
+          { "content": "Procéder au paiement" },
+          { "content": "Suivre l'avancée de ses épisodes" },
+          {
+            "content": "Comparer les modifications proposées par Echoes avec la demande initiale"
+          },
+          { "content": "Faire une demande d'épisode sur mesure" }
+        ]
+      },
+      {
+        "type": "br",
+        "content": "<br/>"
+      },
+      {
+        "type": "paragraph",
+        "content": "Parallèlement, Echoes devait pouvoir bénéficier d'un backoffice afin de :"
+      },
+      {
+        "type": "list",
+        "content": [
+          {
+            "content": "Proposer des modifications au client (texte à transformer, titre du podcast, narrateur)"
+          },
+          { "content": " Envoyer un extrait audio au client" },
+          { "content": "Envoyer le fichier final au client" },
+          { "content": "Suivre l'avancée des commandes" },
+          {
+            "content": "Entrer dynamiquement des options et une échelle de tarifs selon le nombre de mots à transformer"
+          },
+          { "content": "Réceptionner les demandes de devis 'sur-mesure'" }
+        ]
+      },
+      {
+        "type": "br",
+        "content": "<br/>"
+      },
+      {
+        "type": "paragraph",
+        "content": "Le statut des épisodes conditionne ce qu'il est possible de faire côté Client ou côté Echoes."
+      },
+      {
+        "type": "paragraph",
+        "content": "Exemple : lorsque le statut est 'En production', le client ne peut plus modifier sa demande. Seul Echoes peut accèder aux informations et envoyer le fichier final une fois la production terminée."
+      },
+      {
+        "type": "paragraph",
+        "content": "Lorsque le fichier est envoyé, le statut passe à 'En attente validation' et une notification email est envoyée au client (non-activé dans la démo). Le client peut alors écouter son audio et demander des modifications si nécessaire. Le statut repasse alors à 'En production'."
+      }
+    ],
+    "furtherDev": [
+      {
+        "type": "paragraph",
+        "content": "Concernant les développements futurs, nous avions pensé à créer une 3e plateforme côté narrateur. L'idée aurait été de pouvoir assigner un épisode à un narrateur depuis le backoffice et que celui-ci le retrouve dans son espace personnel."
+      },
+      {
+        "type": "paragraph",
+        "content": "Une fois sa production terminée, il aurait eu la possibilité d'uploader directement ses fichiers via l'interface. Echoes n'aurait eu alors qu'à vérifier la conformité du fichier avant de l'envoyer au client pour validation."
+      }
+    ],
+    "stack": ["NodeJS", "React", "express"],
     "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780933/portfolio/echoes/Echoes_i9glpu.jpg",
     "gallery": [
-      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780933/portfolio/echoes/Echoes_i9glpu.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305170/portfolio/echoes/2020-09-28_16h58_21_x9cp6f.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305171/portfolio/echoes/2020-09-28_16h59_01_iyghbz.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305170/portfolio/echoes/2020-09-28_16h58_29_a3vsev.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305355/portfolio/echoes/2020-09-28_17h02_00_i5m62r.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305355/portfolio/echoes/2020-09-28_17h02_16_xhowlw.png"
     ],
     "github": [
       {
@@ -28,7 +110,7 @@
       {
         "text": "VOIR LA DEMO",
         "demoLink": "https://echoes-jolisdegats.netlify.app/",
-        "login": { "admin": "admin", "mdp": "mdp" }
+        "login": { "admin": "demo@mail.com", "mdp": "demo" }
       },
       {
         "text": "VOIR LE BACKOFFICE",
@@ -36,21 +118,29 @@
         "login": { "admin": "administrareut", "mdp": "mot de passe" }
       }
     ],
-    "gif": "echoes-gif"
+    "gif": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601300271/portfolio/echoes/echoes-gif_n5tibh.gif"
   },
   {
     "idName": "marvel",
     "title": "Marvel",
     "category": "Fullstack",
     "soloOrTeam": "Solo",
-    "duration": 8,
-    "description": "This is the description of the project.",
-    "languages": ["NodeJS", "React", "express"],
+    "duration": "2 jours",
+    "description": [
+      {
+        "type": "paragraph",
+        "content": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure"
+      }
+    ],
+    "features": "",
+    "furtherDev": "",
+    "stack": ["NodeJS", "React", "express"],
     "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780896/portfolio/marvel/Marvel_q6a4wj.jpg",
     "gallery": [
-      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780896/portfolio/marvel/Marvel_q6a4wj.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
-      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600782835/portfolio/marvel/GIF_22-09-2020_15-53-14_xim2fe.gif"
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305589/portfolio/marvel/2020-09-28_17h05_18_hozbjt.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305735/portfolio/marvel/2020-09-28_17h08_23_evy3ik.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305590/portfolio/marvel/2020-09-28_17h05_49_jhcx8u.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305590/portfolio/marvel/2020-09-28_17h05_30_uf8nzv.png"
     ],
     "github": [
       {
@@ -68,22 +158,28 @@
         "demoLink": "https://marvel-jolisdegats.netlify.app/"
       }
     ],
-    "gif": "marvel-gif",
-    "screenshot": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600782482/portfolio/marvel/marvel-screenshot_gr9n8c.jpg"
+    "gif": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600782835/portfolio/marvel/GIF_22-09-2020_15-53-14_xim2fe.gif"
   },
   {
     "idName": "leboncoin",
     "title": "Leboncoin",
     "category": "Fullstack",
     "soloOrTeam": "Solo",
-    "duration": 8,
-    "description": "This is the description of the project.",
-    "languages": ["NodeJS", "React", "express"],
+    "duration": "2 jours",
+    "description": [
+      {
+        "type": "paragraph",
+        "content": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure"
+      }
+    ],
+    "features": "",
+    "furtherDev": "",
+    "stack": ["NodeJS", "React", "express"],
     "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780923/portfolio/leboncoin/Leboncoin_mhk3ci.jpg",
     "gallery": [
-      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780923/portfolio/leboncoin/Leboncoin_mhk3ci.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305902/portfolio/leboncoin/2020-09-28_17h10_20_j2rg7j.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305902/portfolio/leboncoin/2020-09-28_17h10_42_xj8rq3.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601305902/portfolio/leboncoin/2020-09-28_17h11_20_bieetl.png"
     ],
     "github": [
       {
@@ -101,27 +197,33 @@
         "text": "VOIR LA DEMO",
         "demoLink": "https://leboncoin-jolisdegats.netlify.app/",
         "login": {
-          "admin": "",
-          "mdp": ""
+          "admin": "demon@mail.com",
+          "mdp": "demo"
         }
       }
     ],
 
-    "gif": "leboncoin-gif"
+    "gif": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601300199/portfolio/leboncoin/leboncoin-gif_covhwg.gif"
   },
   {
     "idName": "deliveroo",
     "title": "Panier Deliveroo",
     "category": "Fullstack",
     "soloOrTeam": "Solo",
-    "duration": 8,
-    "description": "This is the description of the project.",
-    "languages": ["NodeJS", "React", "express"],
+    "duration": "1/2 journée",
+    "description": [
+      {
+        "type": "paragraph",
+        "content": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure"
+      }
+    ],
+    "features": "",
+    "furtherDev": "",
+    "stack": ["NodeJS", "React", "express"],
     "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780941/portfolio/deliveroo/Deliveroo_irdfce.jpg",
     "gallery": [
-      "https://res.cloudinary.com/dqp905mfv/image/upload/v1600780941/portfolio/deliveroo/Deliveroo_irdfce.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601306234/portfolio/deliveroo/2020-09-28_17h16_17_h4qewp.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601306234/portfolio/deliveroo/2020-09-28_17h16_37_ai3c7h.png"
     ],
     "github": [
       {
@@ -139,21 +241,28 @@
         "demoLink": "https://deliveroo-jolisdegats.netlify.app/"
       }
     ],
-    "gif": "deliveroo-gif"
+    "gif": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601300174/portfolio/deliveroo/deliveroo-gif_ptvelc.gif"
   },
   {
     "idName": "react-todolist",
     "title": "Todo List",
     "category": "Frontend",
     "soloOrTeam": "Solo",
-    "duration": 8,
-    "description": "This is the description of the project.",
-    "languages": ["NodeJS", "React", "express"],
+    "duration": "1/2 journée",
+    "description": [
+      {
+        "type": "paragraph",
+        "content": "Création du MVP d'une startup spécialisée dans la création de podcasts sur mesure"
+      }
+    ],
+    "features": "",
+    "furtherDev": "",
+    "stack": ["NodeJS", "React", "express"],
     "thumbnail": "https://res.cloudinary.com/dqp905mfv/image/upload/v1601245282/portfolio/react-todolist/React-todolist_zzidmd.jpg",
     "gallery": [
-      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601245282/portfolio/react-todolist/React-todolist_zzidmd.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312879/react-new-exercices/Netflix/Emissions%20TV/tedbundy_yjy42o.jpg",
-      "https://res.cloudinary.com/lereacteur-apollo/image/upload/v1580312847/react-new-exercices/Netflix/Emissions%20TV/wildwildcountry_kpzqdv.jpg"
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601306418/portfolio/react-todolist/2020-09-28_17h19_20_zxpt2v.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601306418/portfolio/react-todolist/2020-09-28_17h19_49_ftxzsf.png",
+      "https://res.cloudinary.com/dqp905mfv/image/upload/v1601306418/portfolio/react-todolist/2020-09-28_17h19_59_j7jndq.png"
     ],
     "github": [
       {

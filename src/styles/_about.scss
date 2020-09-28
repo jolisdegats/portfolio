@@ -78,10 +78,6 @@
     100% - ((#{$hobbies-col-number} - 1) * #{$hobbies-gutter})
   );
 
-  // (#{$hobbies-gutter} - (#{$hobbies-gutter} / #{$hobbies-col-number}))
-  // $nav-icon_width: calc(#{$nav-icon_height} + #{$nav-icon_height} / 3);
-  // $nav-icon-bar_height: calc(#{$nav-icon_height} / 4);
-
   .hobbies {
     .masonry {
       margin: 30px auto;
