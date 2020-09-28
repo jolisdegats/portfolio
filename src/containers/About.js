@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import skills from "../json/skillsData.json";
 import HobbiesMasonry from "../components/HobbiesMasonry";
 
