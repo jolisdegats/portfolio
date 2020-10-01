@@ -44,15 +44,15 @@ const UniqueProject = () => {
           if (i === 0) {
             arr.push(
               <p
-                key={index + 1}
-                style={{ fontStyle: "italic", marginTop: "40px" }}
+                key={index + i + 1}
+                style={{ fontStyle: "italic", marginTop: "4rem" }}
               >
                 NOTE : {str[i]}
               </p>
             );
           } else {
             arr.push(
-              <p key={index + 1} style={{ fontStyle: "italic" }}>
+              <p key={index + i + 1} style={{ fontStyle: "italic" }}>
                 {str[i]}
               </p>
             );

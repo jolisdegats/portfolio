@@ -2,8 +2,11 @@
 
 .unique-project-content {
   width: 50%;
+  @include sm {
+    width: 85%;
+  }
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 5rem;
   .headerContentBlock {
     display: flex;
     flex-direction: column;
@@ -14,8 +17,8 @@
     h1 {
       text-align: center;
       width: 100%;
-      margin-bottom: 50px;
-      margin-top: 50px;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
     }
     .backToProjects {
       background: none;
@@ -36,6 +39,9 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      @include sm {
+        height: 40vh;
+      }
       div:nth-child(2) {
         flex: 1;
       }
@@ -47,10 +53,10 @@
         button {
           display: flex;
           width: auto;
-          padding: 10px 5px;
+          padding: 1rem 5px;
           background-color: rgba(0, 0, 0, 0.5);
           color: white;
-          font-size: 30px;
+          font-size: 3rem;
           cursor: pointer;
 
           &:hover {
@@ -63,34 +69,38 @@
   }
 
   .demoLinkBlock {
-    margin-top: 50px;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    @include sm {
+      flex-direction: column;
+    }
     > div {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex: 0 0 40%;
+
       .demoLink {
         // font-family: "Muli", sans-serif;
-        border-radius: 10px;
+        border-radius: 1rem;
         color: white;
         cursor: pointer;
-        height: 40px;
+        height: 4rem;
         margin: 5px 0;
         background: #efe6dd;
         color: #5e534a;
         border: solid 3px #5e534a;
         font-weight: 700;
         letter-spacing: 1px;
-        font-size: 12px;
+        font-size: 1.2rem;
         width: 80%;
       }
       p {
         text-align: center;
         font-style: italic;
-        font-size: 12px;
+        font-size: 1.2rem;
       }
     }
   }
@@ -101,16 +111,19 @@
     .projectInfosTitle {
       letter-spacing: 2px;
       font-weight: 900;
-      font-size: 12px;
+      font-size: 1.2rem;
     }
 
     .projectInfos {
       display: flex;
       align-items: center;
-      padding: 0px 50px 20px;
-      margin: 30px 0 50px 0;
+      padding: 0px 5rem 2rem;
+      margin: 3rem 0 5rem 0;
       border-bottom: solid 1px black;
       border-top: solid 1px black;
+      @include sm {
+        padding: 0px 0px 2rem;
+      }
       div {
         flex: 1;
       }
@@ -118,10 +131,10 @@
 
     .projectDescription {
       p {
-        line-height: 20px;
+        line-height: 2rem;
       }
       h2 {
-        margin-top: 80px;
+        margin-top: 8rem;
       }
     }
 
@@ -129,12 +142,16 @@
       display: flex;
       button {
         background-color: black;
-        border-radius: 10px;
+        border-radius: 1rem;
         color: white;
         cursor: pointer;
-        height: 30px;
-        margin: 5px 10px 5px 0;
+        height: 3rem;
+        margin: 5px 1rem 5px 0;
         width: 25%;
+        @include sm {
+          width: unset;
+        }
+
         span {
           display: flex;
           align-items: center;

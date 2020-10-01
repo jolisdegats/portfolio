@@ -1,6 +1,7 @@
 import React from "react";
 import skills from "../json/skillsData.json";
 import HobbiesMasonry from "../components/HobbiesMasonry";
+import { isMobile } from "react-device-detect";
 
 const About = () => {
   const hobbies = [
@@ -54,6 +55,9 @@ const About = () => {
       title: "Moi, tentant d'optimiser mon temps de vie",
     },
   ];
+
+  let col = 0;
+  isMobile ? (col = 1) : (col = 3);
 
   return (
     <main className="about">
@@ -112,7 +116,7 @@ const About = () => {
       <div className="hobbies">
         <h2>Tranche de vie</h2>
         <div className="masonry">
-          <HobbiesMasonry columns={3} gap={25} hobbies={hobbies}>
+          <HobbiesMasonry columns={col} gap={25} hobbies={hobbies}>
             {hobbies.map((elem, key) => {
               const height = 200 + Math.ceil(Math.random() * 200);
 

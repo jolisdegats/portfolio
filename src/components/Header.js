@@ -1,23 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
 import logo from "../img/logo.png";
+import { isMobile } from "react-device-detect";
 
 const Header = () => {
   const history = useHistory();
-  const [burgerMenu, setBurgerMenu] = useState(true);
+  let menuOpened;
+  isMobile ? (menuOpened = "load") : (menuOpened = true);
+  const [burgerMenu, setBurgerMenu] = useState(menuOpened);
+
+  useEffect(() => {
+    if (isMobile === true && burgerMenu === false) {
+      setTimeout(() => {
+        setBurgerMenu("load");
+      }, 100);
+    }
+  }, [setBurgerMenu, burgerMenu]);
+
   return (
     <header>
       <img src={logo} alt="logo" onClick={() => history.push("/")} />
-      <BurgerMenu burgerMenu={burgerMenu}></BurgerMenu>
-      <div
-        className={burgerMenu ? "nav-icon4 open" : "nav-icon4"}
-        onClick={() => setBurgerMenu(!burgerMenu)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <BurgerMenu
+        burgerMenu={burgerMenu}
+        setBurgerMenu={setBurgerMenu}
+      ></BurgerMenu>
     </header>
   );
 };

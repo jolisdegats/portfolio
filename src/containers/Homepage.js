@@ -5,7 +5,7 @@ import profilePic from "../img/Julie-profilePic.png";
 const Homepage = () => {
   return (
     <main className="homepageContent">
-      <img src={profilePic} alt="" style={{ height: 400 }} />
+      <img src={profilePic} alt="" />
       <div>
         <h1>Hi, I'm Julie.</h1>
         {/* <h2>DEVELOPPEUSE | EX-MARKETEUSE </h2> */}
