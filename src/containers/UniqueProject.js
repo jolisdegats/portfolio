@@ -37,6 +37,28 @@ const UniqueProject = () => {
             })}
           </ul>
         );
+      } else if (elem.type === "note") {
+        let str = elem.content.split("//");
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+          if (i === 0) {
+            arr.push(
+              <p
+                key={index + 1}
+                style={{ fontStyle: "italic", marginTop: "40px" }}
+              >
+                NOTE : {str[i]}
+              </p>
+            );
+          } else {
+            arr.push(
+              <p key={index + 1} style={{ fontStyle: "italic" }}>
+                {str[i]}
+              </p>
+            );
+          }
+          bal = arr;
+        }
       } else {
         bal = <br key={index + 1} />;
       }
@@ -158,7 +180,12 @@ const UniqueProject = () => {
           <h2>Stack :</h2>
           <p>
             {item.stack.map((elem, index) => {
-              return <span key={index}>{elem}, </span>;
+              return (
+                <span key={index}>
+                  {elem}
+                  {index !== item.stack.length - 1 ? ", " : ""}{" "}
+                </span>
+              );
             })}
           </p>
 
