@@ -85,7 +85,10 @@ const UniqueProject = () => {
       ) : (
         <>
           <div className="headerContentBlock">
-            <button onClick={history.goBack} className="backToProjects">
+            <button
+              onClick={() => history.push("/projects")}
+              className="backToProjects"
+            >
               ◂ Retour aux projets
             </button>
             <br />

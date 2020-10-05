@@ -79,7 +79,7 @@ export const LazyGallery = ({
     const img = new Image();
     img.src = myGallery[galleryItem];
     img.onload = () => setSource(myGallery[galleryItem]);
-  }, [galleryItem, myGallery]);
+  }, [galleryItem, myGallery, setGalleryItem]);
 
   return (
     <div
