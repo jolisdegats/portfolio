@@ -14,21 +14,21 @@ const Contact = () => {
         </p>
         <h2>Ou retrouvez moi sur :</h2>
         <div className="contactSites">
-          <LoadImage
+          <img
             src="https://www.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png"
             alt="Linkedin"
             onClick={() =>
               window.open("https://www.linkedin.com/in/julieszwarc", "_blank")
             }
           />
-          <LoadImage
+          <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
             alt="Github"
             onClick={() =>
               window.open("https://github.com/jolisdegats", "_blank")
             }
           />
-          <LoadImage
+          <img
             src="https://pbs.twimg.com/profile_images/905010874729066496/lJgq0y4u.jpg"
             alt="SensCritique"
             onClick={() =>
