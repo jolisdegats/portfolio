@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://julieszwarc.com ">
-  <img src="https://res.cloudinary.com/dqp905mfv/image/upload/v1601699116/portfolio/ReadMe/portfolio_h30gei.jpg" alt ="Portfolio - Banner"  />
+  <img src="https://res.cloudinary.com/dqp905mfv/image/upload/v1601871500/portfolio/ReadMe/portfolio_hmx5y8.jpg" alt ="Portfolio - Banner"  />
   </a>
 </p>
 <br/>
