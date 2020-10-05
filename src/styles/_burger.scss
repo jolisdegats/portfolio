@@ -24,6 +24,7 @@ header {
     display: flex;
     height: 100%;
     align-items: center;
+    z-index: 20;
 
     @include sm {
       align-items: flex-end;
