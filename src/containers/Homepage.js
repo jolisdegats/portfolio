@@ -1,11 +1,14 @@
 import React from "react";
-// import homepageImage from "../img/illustration-homepage-T2.jpg";
-import profilePic from "../img/Julie-profilePic.png";
+import { LoadImage } from "../components/LoadImage";
 
 const Homepage = () => {
+  const profilePic =
+    "https://res.cloudinary.com/dqp905mfv/image/upload/v1601623023/portfolio/Julie-profilepic2_qynnoe.png";
+
   return (
     <main className="homepageContent">
-      <img src={profilePic} alt="" />
+      <LoadImage src={profilePic} alt="profilePic" />
+
       <div>
         <h1>Hi, I'm Julie.</h1>
         {/* <h2>DEVELOPPEUSE | EX-MARKETEUSE </h2> */}

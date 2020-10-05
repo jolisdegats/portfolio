@@ -38,7 +38,16 @@ const HobbiesMasonry = (props) => {
     );
   }
 
-  return <div style={{ display: "flex" }}>{result}</div>;
+  return (
+    <div className="hobbies">
+      <h2>Tranche de vie</h2>
+      <div className="masonry">
+        <div className="imgLoaded" style={{ display: "flex" }}>
+          {result}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 HobbiesMasonry.propTypes = {

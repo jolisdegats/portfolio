@@ -42,6 +42,7 @@
       @include sm {
         height: 40vh;
       }
+
       div:nth-child(2) {
         flex: 1;
       }
@@ -69,7 +70,7 @@
   }
 
   .demoLinkBlock {
-    margin-top: 5rem;
+    margin: 5rem 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -132,10 +133,18 @@
     .projectDescription {
       p {
         line-height: 2rem;
+        margin-top: 3rem;
       }
       h2 {
         margin-top: 8rem;
       }
+      li p {
+        margin: 0;
+      }
+    }
+
+    .noteStripe {
+      font-style: italic;
     }
 
     .buttonsBlock {

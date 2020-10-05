@@ -68,10 +68,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
         flex: 1;
         img {
-          max-width: 50%;
+          max-width: 100%;
           max-height: 6rem;
         }
       }
@@ -92,14 +92,14 @@
     .masonry {
       margin: 3rem auto;
     }
+
     .itemHobbies {
       background-position: center;
       background-size: cover;
       padding: 3rem;
       text-align: center;
-
       &:hover:before {
-        content: attr(data-before);
+        content: attr(dataBefore);
         background: #f9f8f5fa;
         height: 100%;
         display: flex;

@@ -1,210 +1,182 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
+import Loader from "../components/Loader";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import parse from "html-react-parser";
+import { LazyGallery } from "../components/LoadImage";
 
 const UniqueProject = () => {
   const location = useLocation();
   const history = useHistory();
+  const [isLoading, setIsLoading] = useState(true);
+  const [myGallery, setMyGallery] = useState([]);
   const [galleryItem, setGalleryItem] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
   const item = location.state.item;
 
-  useEffect(() => {
-    item.gif !== "" && item.gallery.push(item.gif);
-  }, [item.gallery, item.gif]);
+  const {
+    title,
+    category,
+    duration,
+    demo,
+    soloOrTeam,
+    stack,
+    gallery,
+    features,
+    gif,
+    githubFrontend,
+    githubBackend,
+    description,
+    furtherDevelopment,
+    noteStripe,
+  } = item;
 
-  const parsing = (arr) => {
-    let str = [];
-    let title = "";
-    let bal;
-    if (arr === item.features) {
-      title = "Features :";
-    } else if (arr === item.furtherDev) {
-      title = "Futurs développements :";
-    }
-
-    str.push(<h2 key={0}>{title}</h2>);
-    arr.map((elem, index) => {
-      if (elem.type === "paragraph") {
-        bal = <p key={index + 1}>{elem.content}</p>;
-      } else if (elem.type === "list") {
-        bal = (
-          <ul key={index + 1}>
-            {elem.content.map((listItem, index) => {
-              return <li key={index}>{listItem.content}</li>;
-            })}
-          </ul>
-        );
-      } else if (elem.type === "note") {
-        let str = elem.content.split("//");
-        let arr = [];
-        for (let i = 0; i < str.length; i++) {
-          if (i === 0) {
-            arr.push(
-              <p
-                key={index + i + 1}
-                style={{ fontStyle: "italic", marginTop: "4rem" }}
-              >
-                NOTE : {str[i]}
-              </p>
-            );
-          } else {
-            arr.push(
-              <p key={index + i + 1} style={{ fontStyle: "italic" }}>
-                {str[i]}
-              </p>
-            );
-          }
-          bal = arr;
-        }
-      } else {
-        bal = <br key={index + 1} />;
-      }
-      return str.push(bal);
-    });
-
-    return str;
+  const getRichText = (doc, title) => {
+    return (
+      <>
+        <h2>{title}</h2>
+        {parse(documentToHtmlString(doc))}
+      </>
+    );
   };
+
+  const generateGitLink = (link, str) => {
+    return (
+      <button src={link} className="gitLink">
+        <span>{str}</span>
+      </button>
+    );
+  };
+
+  useEffect(() => {
+    const initializeGallery = (gal) => {
+      let arr = [];
+      gif && gal.push(gif);
+
+      gal.map(async (elem, index) => {
+        arr.push(elem.fields.file.url);
+      });
+
+      return setMyGallery(arr);
+    };
+
+    initializeGallery(gallery);
+    setIsLoading(false);
+  }, [gallery, gif]);
 
   return (
     <main className="unique-project-content">
-      <div className="headerContentBlock">
-        <button onClick={history.goBack} className="backToProjects">
-          ◂ Retour aux projets
-        </button>
-        <br />
-        <h1>{item.title}</h1>
-        {isOpen && (
-          <Lightbox
-            mainSrc={item.gallery[galleryItem]}
-            nextSrc={item.gallery[(galleryItem + 1) % item.gallery.length]}
-            prevSrc={
-              item.gallery[
-                (galleryItem + item.gallery.length - 1) % item.gallery.length
-              ]
-            }
-            onCloseRequest={() => setIsOpen(false)}
-            onMovePrevRequest={() =>
-              setGalleryItem(
-                (galleryItem + item.gallery.length - 1) % item.gallery.length
-              )
-            }
-            onMoveNextRequest={() =>
-              setGalleryItem((galleryItem + 1) % item.gallery.length)
-            }
-          />
-        )}
-        <div
-          className="backgroundImageGallery"
-          style={{
-            backgroundImage: `url(${item.gallery[galleryItem]})`,
-          }}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <div>
-            <button
-              onClick={(event) => {
-                event.stopPropagation();
-                galleryItem === 0
-                  ? setGalleryItem(item.gallery.length - 1)
-                  : setGalleryItem(galleryItem - 1);
-              }}
-            >
-              ⮜
+      {isLoading ? (
+        <Loader></Loader>
+      ) : (
+        <>
+          <div className="headerContentBlock">
+            <button onClick={history.goBack} className="backToProjects">
+              ◂ Retour aux projets
             </button>
-          </div>
-          <div></div>
-          <div>
-            <button
-              onClick={(event) => {
-                event.stopPropagation();
-                galleryItem === item.gallery.length - 1
-                  ? setGalleryItem(0)
-                  : setGalleryItem(galleryItem + 1);
-              }}
-            >
-              ⮞
-            </button>
-          </div>
-        </div>
-      </div>
+            <br />
+            <h1>{title}</h1>
+            {isOpen && (
+              <Lightbox
+                mainSrc={myGallery[galleryItem]}
+                nextSrc={myGallery[(galleryItem + 1) % myGallery.length]}
+                prevSrc={
+                  gallery[
+                    (galleryItem + myGallery.length - 1) % myGallery.length
+                  ]
+                }
+                onCloseRequest={() => setIsOpen(false)}
+                onMovePrevRequest={() =>
+                  setGalleryItem(
+                    (galleryItem + myGallery.length - 1) % myGallery.length
+                  )
+                }
+                onMoveNextRequest={() =>
+                  setGalleryItem((galleryItem + 1) % myGallery.length)
+                }
+              />
+            )}
 
-      <div className="projectContentBlock">
-        <div className="projectInfos">
-          <div>
-            <h2>CATEGORIE</h2>
-            <p>{item.category}</p>
-          </div>
-          <div>
-            <h2>PROJET</h2>
-            <p>
-              {item.soloOrTeam[0].toUpperCase() +
-                item.soloOrTeam.substring(1).toLowerCase()}
-            </p>
-          </div>
-          <div>
-            <h2>DUREE</h2>
-            <p>{item.duration}</p>
-          </div>
-        </div>
-
-        <div className="projectDescription">
-          {item.description && parsing(item.description)}
-
-          <div className="demoLinkBlock">
-            {item.demo.map((elem, index) => {
-              return (
-                <div key={index}>
-                  <button
-                    className="demoLink"
-                    onClick={() => window.open(elem.demoLink, "_blank")}
-                  >
-                    <span>{elem.text}</span>
-                  </button>
-                  {elem.login && (
-                    <p>
-                      admin : {elem.login.admin} <br /> mdp : {elem.login.mdp}
-                    </p>
-                  )}
-                </div>
-              );
-            })}
+            <LazyGallery
+              className="backgroundImageGallery"
+              myGallery={myGallery}
+              galleryItem={galleryItem}
+              setGalleryItem={setGalleryItem}
+              onClick={() => setIsOpen(!isOpen)}
+            ></LazyGallery>
           </div>
 
-          {item.features && parsing(item.features)}
+          <div className="projectContentBlock">
+            <div className="projectInfos">
+              <div>
+                <h2>CATEGORIE</h2>
+                <p>{category}</p>
+              </div>
+              <div>
+                <h2>PROJET</h2>
+                <p>
+                  {soloOrTeam[0].toUpperCase() +
+                    soloOrTeam.substring(1).toLowerCase()}
+                </p>
+              </div>
+              <div>
+                <h2>DUREE</h2>
+                <p>{duration}</p>
+              </div>
+            </div>
 
-          {item.furtherDev && parsing(item.furtherDev)}
+            <div className="projectDescription">
+              {getRichText(description)}
 
-          <h2>Stack :</h2>
-          <p>
-            {item.stack.map((elem, index) => {
-              return (
-                <span key={index}>
-                  {elem}
-                  {index !== item.stack.length - 1 ? ", " : ""}{" "}
-                </span>
-              );
-            })}
-          </p>
+              <div className="demoLinkBlock">
+                {demo.map((elem, index) => {
+                  return (
+                    <div key={index}>
+                      <button
+                        className="demoLink"
+                        onClick={() => window.open(elem.demoLink, "_blank")}
+                      >
+                        <span>{elem.text}</span>
+                      </button>
+                      {elem.login && (
+                        <p>
+                          admin : {elem.login.admin} <br /> mdp :{" "}
+                          {elem.login.mdp}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              {features && getRichText(features, "Features :")}
 
-          <h2>Code du projet :</h2>
-          <div className="buttonsBlock">
-            {item.github.map((elem, index) => {
-              return (
-                <button
-                  key={index}
-                  className="gitLink"
-                  onClick={() => window.open(elem.link, "_blank")}
-                >
-                  <span>{elem.text}</span>
-                </button>
-              );
-            })}
+              {noteStripe && (
+                <p className="noteStripe">
+                  NOTE : Stripe est en mode test dans cette application. Pour
+                  valider un paiement, utilisez les informations suivantes :
+                  <br />
+                  Numéro de carte : 4242424242424242 / Date : 04/24 / CVC : 242
+                  / Code Postal : 75000
+                </p>
+              )}
+              {furtherDevelopment &&
+                getRichText(furtherDevelopment, "Futurs développements :")}
+
+              <h2>Stack :</h2>
+              <p>{stack}</p>
+
+              <h2>Code du projet :</h2>
+              <div className="buttonsBlock">
+                {generateGitLink(githubFrontend, "Frontend")}
+                {generateGitLink(githubBackend, "Backend")}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </main>
   );
 };

@@ -1,28 +1,30 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { getLink } from "../functions/getLink";
+import { LoadImage } from "./LoadImage";
 
 const ListItemProject = ({ elem, index }) => {
-  const [imageHover, setImageHover] = useState(false);
   const history = useHistory();
+  const [imageHover, setImageHover] = useState(false);
+  const { idName, gif, thumbnail, title } = elem;
 
   return (
     <div
       key={index}
       className="projects-list-item"
-      onClick={() => history.push(`/projects/${elem.idName}`, { item: elem })}
-      onMouseEnter={() => setImageHover(true)}
-      onMouseLeave={() => setImageHover(false)}
+      onClick={() => history.push(`/projects/${idName}`, { item: elem })}
     >
-      <img
-        src={
-          imageHover === true
-            ? elem.gif !== ""
-              ? elem.gif
-              : elem.thumbnail
-            : elem.thumbnail
+      <div
+        className="imgLoaded"
+        style={
+          imageHover
+            ? { backgroundImage: `url(${getLink(gif)}` }
+            : { opacity: 0 }
         }
-        alt={elem.title}
-      />
+        onMouseEnter={() => setImageHover(true)}
+        onMouseLeave={() => setImageHover(false)}
+      ></div>
+      <LoadImage src={getLink(thumbnail)} alt={title} />
     </div>
   );
 };

@@ -8,6 +8,7 @@
 @import "./projectsList";
 @import "./uniqueProject";
 @import "./contactContent";
+@import "./loader";
 
 @import "./media";
 
@@ -84,4 +85,29 @@ button {
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+}
+
+// TEST
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  .imgLoaded {
+    animation-play-state: paused !important;
+  }
+}
+
+.imgLoaded {
+  animation: show-on-load 2s 0.5s cubic-bezier(0, 1.6, 0.6, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes show-on-load {
+  0% {
+    opacity: 0;
+    // transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    // transform: none;
+  }
 }
