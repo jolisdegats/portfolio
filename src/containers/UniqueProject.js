@@ -6,6 +6,7 @@ import "react-image-lightbox/style.css";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import parse from "html-react-parser";
 import { LazyGallery } from "../components/LoadImage";
+import { getExternalItem } from "../functions/getExternalItem";
 
 const UniqueProject = () => {
   const location = useLocation();
@@ -14,8 +15,7 @@ const UniqueProject = () => {
   const [myGallery, setMyGallery] = useState([]);
   const [galleryItem, setGalleryItem] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
-  const item = location.state.item;
+  const [item, setItem] = useState([]);
 
   const {
     title,
@@ -52,20 +52,31 @@ const UniqueProject = () => {
   };
 
   useEffect(() => {
-    const initializeGallery = (gal) => {
-      let arr = [];
-      gif && gal.push(gif);
-
-      gal.map(async (elem, index) => {
-        arr.push(elem.fields.file.url);
-      });
-
-      return setMyGallery(arr);
+    const getItem = async (location) => {
+      let response =
+        location.state?.item || (await getExternalItem(location.pathname));
+      setItem(response);
+      return response;
     };
+    getItem(location);
+  }, [location]);
 
-    initializeGallery(gallery);
-    setIsLoading(false);
-  }, [gallery, gif]);
+  useEffect(() => {
+    if (Object.keys(item).length !== 0) {
+      const initializeGallery = (gal) => {
+        let arr = [];
+        gif && gal.push(gif);
+
+        gal.map(async (elem, index) => {
+          arr.push(elem.fields.file.url);
+        });
+
+        return setMyGallery(arr);
+      };
+      initializeGallery(item.gallery);
+      setIsLoading(false);
+    }
+  }, [gallery, gif, item]);
 
   return (
     <main className="unique-project-content">
