@@ -31,33 +31,8 @@ const App = () => {
   }
 
   useEffect(() => {
-    // Preload all images
-    // client
-    //   .getEntries()
-    //   .then((response) =>
-    //     setTimeout(() => {
-    //       response.items.map((elem, index) => {
-    //         return (
-    //           (new Image().src = `http:${elem.fields.gif?.fields.file.url}`),
-    //           (new Image().src = `http:${elem.fields.thumbnail?.fields.file.url}`),
-    //           elem.fields.gallery?.map((elem, index) => {
-    //             return (new Image().src = `http:${elem.fields.file.url}`);
-    //           }),
-    //           (new Image().src =
-    //             "https://res.cloudinary.com/dqp905mfv/image/upload/v1601623023/portfolio/Julie-profilepic2_qynnoe.png")
-    //         );
-    //       });
-    //     }, 2000)
-    //   )
-    //   .then(() =>
     setIsLoading(false);
-    // )
-    // .catch(console.error);
   }, []);
-
-  // useEffect(() => {
-  //   setIsLoading(false);
-  // }, []);
 
   return (
     <div className="App">
