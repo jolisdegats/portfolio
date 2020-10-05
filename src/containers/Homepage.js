@@ -11,7 +11,6 @@ const Homepage = () => {
 
       <div>
         <h1>Hi, I'm Julie.</h1>
-        {/* <h2>DEVELOPPEUSE | EX-MARKETEUSE </h2> */}
         <p>
           Ex-marketer en reconversion vers le côté obscur (
           <span role="img" aria-label="developper">
@@ -28,14 +27,6 @@ const Homepage = () => {
           </span>
         </p>
       </div>
-
-      {/* <img src={walkingGif} alt="" style={{ height: 300 }} /> */}
-      {/* <img src={homepageImage} alt="" style={{ height: 500 }} /> */}
-
-      {/* <img src={walkingGif} alt="" />
-      <h1>Hi, I'm Julie</h1>
-      <h2>Developer | Designer | Ex-marketer </h2> */}
-      {/* <div>A propos ● Projets ● Contact</div> */}
     </main>
   );
 };
