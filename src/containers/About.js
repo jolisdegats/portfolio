@@ -48,8 +48,10 @@ const About = () => {
           <div className="description">
             <hr />
             <p className="status">
-              Je cherche un stage/poste de développeur web JS,
-              Fullstack/Frontend/Backend <br />
+              {/* Je cherche un stage/poste de développeur web JS,
+              Fullstack/Frontend/Backend <br /> */}
+              Je travaille actuellement chez Fleet en tant que Dev FullStack JS
+              (React/Node/PostGreSQL) <br />
               <span>(mais si tu as lu la homepage tu le sais déjà)</span>.
             </p>
             <hr />

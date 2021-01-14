@@ -10,6 +10,7 @@ import { createClient } from "contentful";
 // import Projects from "./containers/Projects";
 // import UniqueProject from "./containers/UniqueProject";
 
+console.log(process.env.REACT_APP_CONTENTFUL_TOKEN);
 export const client = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACEID,
   accessToken: process.env.REACT_APP_CONTENTFUL_TOKEN,
