@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import loadable from "loadable-components";
 import Loader from "../components/Loader";
-// import Skills from "../components/Skills";
 import HobbiesMasonry from "../components/HobbiesMasonry";
 import { isMobile } from "react-device-detect";
 import { client } from "../App";
@@ -48,9 +47,7 @@ const About = () => {
           <div className="description">
             <hr />
             <p className="status">
-              {/* Je cherche un stage/poste de développeur web JS,
-              Fullstack/Frontend/Backend <br /> */}
-              Je travaille actuellement chez Fleet en tant que Dev FullStack JS
+              Je travaille actuellement chez Virtuo en tant que Fullstack Software Engineer
               (React/Node/PostGreSQL) <br />
               <span>(mais si tu as lu la homepage tu le sais déjà)</span>.
             </p>
