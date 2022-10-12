@@ -20,11 +20,9 @@ const Homepage = () => {
           sûrement des choses à se dire sur votre prochain projet !
         </p>
         <p>
-          {/* Sinon, en ce moment je recherche un stage/poste de Web Developer JS
-          Fullstack (Oct. 2020){" "} */}
-          Sinon, en ce moment je suis Dev FullStack chez{" "}
-          <a style={{ color: "#000" }} href="https://fleet.co">
-            Fleet
+          Sinon, en ce moment je suis FullStack Software Engineer chez{" "}
+          <a style={{ color: "#000" }} href="https://www.govirtuo.com">
+            Virtuo
           </a>{" "}
           !{" "}
           <span role="img" aria-label="unicorn">
